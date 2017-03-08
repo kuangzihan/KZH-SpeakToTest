@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="####################" translatesAutoresizingMaskIntoConstraints="NO" id="jcy-Yn-aaL">
+                                <rect key="frame" x="40" y="94" width="334" height="342"/>
+                                <color key="backgroundColor" red="0.2392156869" green="0.67450982329999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.80901747941970825" green="1" blue="0.94794625043869019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="STLibianSC-Regular" family="Libian SC" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydm-pz-MRd">
+                                <rect key="frame" x="140" y="534" width="134" height="31"/>
+                                <color key="backgroundColor" red="0.34117648010000001" green="0.62352943419999995" blue="0.16862745579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="点击开始识别">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClik:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p4r-FO-zF4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jcy-Yn-aaL" secondAttribute="bottom" constant="300" id="5gm-Kr-1EW"/>
+                            <constraint firstItem="Ydm-pz-MRd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="120" id="6rq-xc-p1O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jcy-Yn-aaL" secondAttribute="trailing" constant="20" id="A0Z-5a-Dnk"/>
+                            <constraint firstItem="jcy-Yn-aaL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="74" id="GSx-da-86j"/>
+                            <constraint firstItem="Ydm-pz-MRd" firstAttribute="top" secondItem="jcy-Yn-aaL" secondAttribute="bottom" constant="98" id="Hsf-D9-YZr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ydm-pz-MRd" secondAttribute="trailing" constant="120" id="eML-ea-kVw"/>
+                            <constraint firstItem="jcy-Yn-aaL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="jgQ-XG-Uyf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ydm-pz-MRd" secondAttribute="bottom" constant="171" id="scJ-OS-0TF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Ydm-pz-MRd" id="twn-cm-emw"/>
+                        <outlet property="textView" destination="jcy-Yn-aaL" id="qwD-06-vX4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="138.58695652173915"/>
+        </scene>
+    </scenes>
+</document>
